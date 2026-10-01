@@ -4687,7 +4687,7 @@ void main() {
         </div>
         <div class="expr-hint" data-hint-for="dim.${e}"></div>
       </div>
-    `}_exprAxisRow(e){return`<div class="prop-row">${[`x`,`y`,`z`].map(t=>this._exprAxisField(e,t)).join(``)}</div>`}_exprAxisField(e,t){return`
+    `}_exprAxisRow(e){return`<div class="prop-row prop-row-stacked">${[`x`,`y`,`z`].map(t=>this._exprAxisField(e,t)).join(``)}</div>`}_exprAxisField(e,t){return`
       <div class="expr-field">
         <div class="axis-field">
           <span class="axis-tag">${t.toUpperCase()}</span>
@@ -5012,4 +5012,4 @@ fn fs_main(in : VertexOutput) -> @location(0) vec4<f32> {
 `)}`)}}async function aM(){let e=await qA({currentParameters:Cj.list(),currentPrimitives:xj.list(),currentPoints:Sj.list(),currentDatasets:Tj.list(),currentVariants:wj.list()});if(e){for(let{id:t,patch:n}of e.primitivePatches)xj.updatePrimitive(t,n);for(let{id:t,patch:n}of e.pointPatches)Sj.updatePoint(t,n);for(let{id:t,patch:n}of e.datasetPatches)Tj.updateEntry(t,n);for(let{variantId:t,values:n}of e.variantReplacements)wj.replaceValues(t,n);for(let t of e.removedParameterIds)Cj.removeParameter(t);Vj(),e.warnings.length>0&&alert(`Parametros unificados com ${e.warnings.length} aviso(s) (mesma lista ja mostrada na analise) - revise os itens marcados:\n\n${e.warnings.map(e=>`- ${e}`).join(`
 `)}`)}}async function oM(){let e=await YA({currentDatasets:Tj.list(),currentPrimitives:xj.list(),currentPoints:Sj.list()});if(e){for(let{id:t,patch:n}of e.primitivePatches)xj.updatePrimitive(t,n);for(let{id:t,patch:n}of e.pointPatches)Sj.updatePoint(t,n);for(let{id:t,patch:n}of e.datasetPatches)Tj.updateEntry(t,n);for(let t of e.removedDatasetIds)Tj.removeEntry(t);Vj(),e.warnings.length>0&&alert(`Datasets unificados com ${e.warnings.length} aviso(s) (mesma lista ja mostrada na analise) - revise os itens marcados:\n\n${e.warnings.map(e=>`- ${e}`).join(`
 `)}`)}}async function sM(){let e=await $A({currentParameters:Cj.list(),currentPrimitives:xj.list(),currentPoints:Sj.list(),currentDatasets:Tj.list(),currentVariants:wj.list()});if(e){for(let{id:t,patch:n}of e.primitivePatches)xj.updatePrimitive(t,n);for(let{id:t,patch:n}of e.pointPatches)Sj.updatePoint(t,n);for(let{id:t,patch:n}of e.datasetPatches)Tj.updateEntry(t,n);for(let{variantId:t,values:n}of e.variantReplacements)wj.replaceValues(t,n);for(let{id:t,newNumber:n}of e.parameterUpdates)Cj.updateParameter(t,{number:n});Vj()}}function cM(e){return new Promise(t=>{let n=document.createElement(`input`);n.type=`file`,n.accept=e,n.style.display=`none`,n.addEventListener(`change`,()=>{t(n.files?.[0]??null),n.remove()}),document.body.appendChild(n),n.click()})}
-//# sourceMappingURL=index-c5ygMrks.js.map
+//# sourceMappingURL=index-C7TnBm8I.js.map
